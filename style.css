@@ -55,11 +55,46 @@ a {
     text-align: justify;
 }
 
-@media (max-width: 540px) {
+#back {
+    display: none;
+}
+
+@media (max-width: 640px) {
     #navbar {
+        position: relative;
         float: none;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #navbar header {
+        width: 98%;
+        text-align: center;
+    }
+    .nav-link {
+        padding: 1.5%;
+        margin: 0px;
+        font-size: 16px;
+        border: none;
+    }
+    #intro {
+        border: none;
     }
     #main-doc {
         float: none;
+        width: 94%;
+    }
+    #back {
+        display: block;
+        position: fixed;
+        top: 90vh;
+        left: 87vw;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(31, 40, 51, 0.3);
+        border-radius: 50%;
+        padding: 2%;
     }
 }
