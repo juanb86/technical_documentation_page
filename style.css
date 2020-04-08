@@ -23,7 +23,17 @@ a {
 }
 
 #navbar header {
-    margin-left: 4%;
+    margin: 5%;
+}
+
+#js-icon {
+    display: inline;
+    height: 1.1em;
+    filter: invert(100%);
+}
+
+#navbar header h2 {
+    display: inline;
 }
 
 .nav-link {
@@ -33,7 +43,7 @@ a {
     border-top: none;
 }
 
-#navbar :nth-child(2) {
+#intro {
     border-top: thin solid #0b0c10;
 }
 
@@ -43,4 +53,13 @@ a {
     padding: 3%;
     padding-top: 0%;
     text-align: justify;
+}
+
+@media (max-width: 540px) {
+    #navbar {
+        float: none;
+    }
+    #main-doc {
+        float: none;
+    }
 }
