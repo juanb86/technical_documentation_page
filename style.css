@@ -1,19 +1,46 @@
-/* Global */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c5c6c7;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #c5c6c7;
 }
 
 #navbar {
+    position: fixed;
     float: left;
     width: 20%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #1f2833;
+    color: #c5c6c7;
+}
+
+#navbar header {
+    margin-left: 4%;
+}
+
+.nav-link {
+    padding: 4%;
+    font-size: 18px;
+    border: thin solid #0b0c10;
+    border-top: none;
+}
+
+#navbar :nth-child(2) {
+    border-top: thin solid #0b0c10;
 }
 
 #main-doc {
     float: right;
-    width: 78%;
+    width: 72%;
+    padding: 3%;
+    padding-top: 0%;
+    text-align: justify;
 }
